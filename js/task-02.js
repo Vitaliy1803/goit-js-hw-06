@@ -28,9 +28,10 @@ const itemRef = ingredients.map((ingredient) => {
   item.textContent = ingredient;
 
   item.classList.add(`item`);   
-  ingredientsList.append(item);
+  return item;
 
 });
+ingredientsList.append(...itemRef);
 
 
   
