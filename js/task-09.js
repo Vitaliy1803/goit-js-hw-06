@@ -10,8 +10,10 @@ const bodyBackgroundColor = document.body;
 
 const changeBackgroundColor =  () => {
   //colorText.textContent = bodyBackgroundColor.style.backgroundColor = getRandomHexColor();
-  colorText.textContent = getRandomHexColor();
-  bodyBackgroundColor.style.backgroundColor = colorText.textContent;
+  // colorText.textContent = getRandomHexColor();
+  // bodyBackgroundColor.style.backgroundColor = colorText.textContent;
+  const color = getRandomHexColor();
+  bodyBackgroundColor.style.backgroundColor = color;
 };
 
 colorBtn.addEventListener(`click`, changeBackgroundColor);
