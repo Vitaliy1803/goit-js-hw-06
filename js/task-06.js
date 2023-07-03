@@ -1,7 +1,7 @@
 
 
-const inputRef = document.getElementById(`validation - input`);
-inputRef.addEventListener(`blur`, onBlurBorderColor);
+const inputRef = document.querySelector(`#validation-input`);
+inputRef.addEventListener('blur', onBlurBorderColor);
 
 
 function onBlurBorderColor() {
