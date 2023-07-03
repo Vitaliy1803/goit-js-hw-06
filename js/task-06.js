@@ -1,7 +1,7 @@
 
 
 const inputRef = document.querySelector(`#validation-input`);
-inputRef.addEventListener('blur', onBlurBorderColor);
+
 
 
 function onBlurBorderColor() {
@@ -16,4 +16,4 @@ function onBlurBorderColor() {
       inputRef.classList.add('invalid');
     }
   };
-
+  inputRef.addEventListener('blur', onBlurBorderColor);
