@@ -2,8 +2,8 @@ const inputSizeRef = document.getElementById(`font-size-control`);
 const textRef = document.getElementById(`text`);
 
 
-function fontSizeRanger(event) {
-textRef.style.fontSize = event.currentTarget.value + `px`;
-}
+const fontSizeRanger = () =>
+(textRef.style.fontSize = `${inputSizeRef.value}px`);
 
+fontSizeRanger();
 inputSizeRef.addEventListener(`input`, fontSizeRanger);
