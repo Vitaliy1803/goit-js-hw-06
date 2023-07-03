@@ -18,7 +18,7 @@ const gallery = document.querySelector(`.gallery`);
 const galleriesList = images
   .map(
     ({ url, alt }) =>
-      `<li><img src="${ url }" alt = "${ alt }" width = "100"></li>`
+      `<li><img src="${ url }" alt = "${ alt }" width = "300" height = "200"></li>`
 )
   .join("");
 
@@ -26,3 +26,4 @@ console.log(galleriesList);
 gallery.insertAdjacentHTML(`beforeend`, galleriesList);
 gallery.style.display = "flex";
 gallery.style.justifyContent = "space-between";
+gallery.style.listStyle = "none";
